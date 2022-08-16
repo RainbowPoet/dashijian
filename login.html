@@ -16,7 +16,7 @@
 			<!-- 登录 -->
 			<div class="login_box">
 				<!-- 表单域 -->
-				<form class="layui-form" action="">
+				<form class="layui-form" id="form_login">
                     <!-- 账号 -->
 					<div class="layui-form-item">
                         <i class="layui-icon layui-icon-username"></i>   
@@ -37,7 +37,7 @@
 							type="text"
 							name="password"
 							required
-							lay-verify="required"
+							lay-verify="required|pwd"
 							placeholder="请输入密码"
 							autocomplete="off"
 							class="layui-input"
